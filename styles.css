@@ -1,0 +1,471 @@
+  *{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Utility class */
+.clr {
+    clear: both;
+}
+
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20 px;
+}
+
+.text-primary {
+    color: rgb(194, 85, 34); 
+    text-transform: uppercase; 
+}
+
+.info-content h2 {
+font-size: 30px;
+text-transform: capitalize;
+padding-bottom: 15px;
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(194, 85, 34);
+    color: #333;
+}
+ 
+.btn-light {
+background:#fff;
+color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+ 
+.bg-primary {
+    background:  rgb(194, 85, 34);
+    columns: #333;
+}
+
+.l-heading{
+    font-size: 40px;
+    padding-top: 55px;
+    padding-bottom: 10px;
+}
+
+/* padding */
+/* P stands for padding | Y stands for y-axis top and bottom */
+
+.py-1{padding: 10px 0;}
+.py-2{padding: 20px 0;}
+.py-3{padding: 30px 0;}
+
+
+/* Main Styles */
+html, body {
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    line-height: 1.7em;
+    height: 100%;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+#navbar {
+    background: #333;
+    color: #fff;
+    display: flex;
+
+
+
+}
+
+#navbar a{
+  
+    color: #fff;
+}
+
+
+
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    /* float: right; */
+}
+
+/* #navbar ul li{
+    float: left;
+} */
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+/* pseudo elements */
+#navbar ul li a:hover,
+#navbar ul li a.current{
+    background: #444;
+    color:  rgb(194, 85, 34);
+}
+
+/* showcase */
+#showcase {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hotel.jpeg") no-repeat center center;
+    background-size: cover;
+    height: 650px;
+}
+
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+    align-content: center;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+   
+    line-height: 1.7em;
+}
+/* home info */
+#home-info {
+    height: 400px;
+}
+
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url("../img/restaurant.jpeg") no-repeat ;
+    min-height: 100%; 
+
+}
+
+
+#about {
+    height: 550px;
+    background: rgb(240, 240, 240);
+}
+
+#abt-img {
+    background: url("../img/food.jpeg");
+    height: 100%;
+    float: right;
+    width: 40%;
+    background-size: cover;
+}
+
+#abt-content{
+    width: 60%;
+    height: 50%;
+}
+
+#abt-content h1{
+    font-size: 45px;
+    padding: 30px;
+    background: rgb(240, 240, 240);
+    text-align: center;
+    font-family:'Segoe UI', Tahoma Verdana, sans-serif;
+}
+#abt-content p{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+ .bodiv{
+        background:rgb(194, 85, 34);
+        color: #333;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        text-align: center;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#home-info .info-content p {
+    padding-bottom: 30px;
+}
+
+/* features */
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+    text-align: center;
+}
+
+#features h3 {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+#features p {
+    padding: 10px;
+}
+
+ /* contact form */
+
+ #contact-form{
+    float: left;
+    margin: 10%;    
+ }
+
+
+ #contact-form .form-group{
+     margin-bottom: 20px;
+     
+ }
+
+ #contact-form label{
+    display: block;
+    margin-bottom: 5px;
+     
+    
+
+ }
+
+ #contact-form input, 
+ #contact-form textarea{
+     width: 100%;
+     padding: 10px;
+     border: none;
+     background: transparent;
+     border-bottom: 2px solid #333;
+     width: 100%;
+     
+
+ }
+
+ #contact-form textarea{
+     height: 200px;
+    
+ }
+
+#contact-form input:focus,
+#contact-form textarea:focus{
+    outline: none;
+    border-color:rgb(194, 85, 34)
+}
+
+button{
+    background-color:#444;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 12%;
+}
+
+.bg-contact{
+    height: 180px;
+    background: #333;
+    color:#fff
+}
+
+
+
+
+/* footer */
+#main-footer{
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+}
+
+.right-col h1{
+    font-size: 26px;
+    padding: 10px;
+
+}
+
+.right-col p {
+    padding: 10px;
+}
+
+
+
+.news-form{
+    
+}
+.border{
+    width: 210px;
+    height: 4px;
+    background: rgb(194, 85, 34);
+    margin: auto;
+   
+}
+.txtb{
+    flex: 1;
+    padding: 18px 40px 10px;
+    font-size: 16px;
+    color: white;
+    background: rgba(194, 85, 34, 0.295);
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+
+#btn{
+   padding: 18px 40px;
+   font-size: 16px;
+   color: white;
+   background: rgb(194, 85, 34);
+   border: none;
+   font-weight: 700;
+   outline: none;
+   border-radius: 30px;
+   margin-left: 20px;
+   cursor: pointer;
+   transition: opacity .3s linear;
+ 
+}
+
+.btn:hover{
+   opacity: .7;
+}
+
+
+/* About page */
+/* Hero */
+
+#hero-img {
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+
+
+
+#hero-imgc {
+    background: url("../img/Testimonials.jpeg");
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+
+
+ /* quote 
+.hero-content {
+    text-align:center;
+    color:#c9b7a8;
+    font-family:anton;
+    padding-top: 380px;
+    font-style: italic;
+}
+.author {
+    margin-right: 200px;
+    font-size: 20px;
+    float: right;
+    font-family:lobster;
+}
+*/
+
+
+#tribute p{
+ text-align:left;
+ padding: 75px;
+ font-size: 30px;
+ margin-left: 35px;
+ font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+ margin-right:45px;
+ color:#fff;
+}
+
+#tribcontainer img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 300px;
+    height: 350px;
+    padding:30px;
+}
+
+#tribute2 p{
+ text-align:right;
+ padding: 75px;
+ font-size: 30px;
+ margin-right: 35px;
+ font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+ color:#fff;
+}
+
+#trib2container img{
+    float: right;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 300px;
+    height: 350px;
+    padding: 30px;
+}
+
+#tribute3 p{
+    text-align:left;
+    padding: 75px;
+    font-size: 30px;
+    margin-left: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#fff;
+}
+
+#trib3container img{
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 300px;
+    padding: 30px;
+    height: 350px;
+}
+
+.name{
+    color:rgb(194, 85, 34)
+}
+#tribute3 {
+    height: 355px;
+}
+.bg{
+    background: #333;
+}
